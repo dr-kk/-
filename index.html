@@ -355,22 +355,19 @@ computing.
           </div>
           <!-- Grid row -->
         </div>
-<div>Website visit count:</div>
-<div class="website-counter"></div>
-<button class="button" id="reset">Reset</button>
+<script>
+  // Assume you have an array 'nums' with visitor counts
+  const nums = [100, 200, 300]; // Example data
+  document.getElementById('CounterVisitor').innerHTML = '';
+  for (const i of nums) {
+    document.getElementById('CounterVisitor').innerHTML += '<span class="counter-item">' + i + '</span>';
+  }
+</script>
       </section>
 
     </footer>
     </div>
-    <script>
-      function myMap() {
-        var mapProp = {
-          center: new google.maps.LatLng(29.947615056359, 76.82274158461705),
-          zoom: 15,
-        };
-        var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-      }
-    </script>
+     
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=myMap&v=weekly"></script>
 
